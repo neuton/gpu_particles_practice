@@ -21,8 +21,9 @@ How to run
 Short description
 --------------
 Computation of particles positions is implemented in OpenCL C, C is used for OpenCL runtime calls.
-Visualization is made with the help of python wrapper for OGRE graphics engine (http://www.ogre3d.org/ http://wiki.python-ogre.org/index.php?title=Main_Page)
+Visualization is made with the help of python wrapper for OGRE graphics engine (http://www.ogre3d.org/ http://wiki.python-ogre.org/index.php?title=Main_Page).
 Python is used as a quick and handy wrapper to clue it all together.
+
 Key source files:
 - main.py -- the main python script which should be executed
 - host.c -- source for C library which is used from python, includes OpenCL initialization, kernel launch functions etc.
@@ -30,7 +31,8 @@ Key source files:
 - test.c -- execution time testing source
 - Makefile -- build setup file, you probably won't need to edit it
 - builddef.txt -- definitions included in Makefile, you may need to edit it
-other files:
+
+Other files:
 - simulation.py -- classes which setup the scene, run OpenCL kernels etc.
 - scene.py -- some base scene classes for inheritance used in simulation.py
 - framework.py -- simple framework for python-ogre (python wrapper of 3D graphics engine) usage
