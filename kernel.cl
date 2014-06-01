@@ -26,9 +26,9 @@ real sqrlen(v3r r)
 // kernel which computes forces (straight forward approach with global memory)
 // =============>>> make it faster by utilizing local memory <<<=============
 __kernel __attribute__((reqd_work_group_size(ln, 1, 1)))
-void compute_forces_global(	__global const v3r * r,
-							__constant const real * m,
-							__global v3r * a)
+void compute_forces(__global const v3r * r,
+					__constant const real * m,
+					__global v3r * a)
 {
 	// each work-item (thread) corresponds to a particle
 	const uint id = get_global_id(0), n = get_global_size(0);
