@@ -4,16 +4,18 @@ This is a simple python (with python-ogre) + C + OpenCL implementation of simula
 
 Requirements
 --------------
-- Windows/Ubuntu
+- Windows
 - OpenCL SDK
 - gcc
 - make
 - python (2.*)
-- python-ogre (download OGRE, OIS and "plugins" and place them into the root directory: https://www.dropbox.com/sh/40ke6pzm5tfbc6u/uwDKB2S4V-)
+- python-ogre (download OGRE, OIS and "plugins" and place them into the root directory:
+https://www.dropbox.com/sh/4i852xb5w9i2dtr/AACE6H5EkiKNDD0jkYht77UGa (for Windows))
 
 How to run
 --------------
 1) execute "make" once from command line in order to comile C source files (to create "host.dll" library used from python script and "test" executable)
+
 2) run "main.py" (choose graphics options; when loaded, press [Enter] to start/stop simulation, use mouse/[+]/[-] to change point of view)
 
 Short description
@@ -54,4 +56,4 @@ Contacts
 in case something goes wrong and/or you have questions, please, contact me
 - by mail: mr.neuton@gmail.com
 - by skype: neuton666
-- vkontaktique: vk.com/id15239112
+- by vkontaktique: vk.com/id15239112
