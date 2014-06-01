@@ -16,7 +16,7 @@ How to run
 --------------
 1) execute "make" once from command line in order to comile C source files (to create "host.dll" library used from python script and "test" executable)
 
-note: in case you use CUDA SDK instead of AMD APP SDK, please modify "builddef.txt" file by specifying appropriate paths
+note: in case you use CUDA SDK instead of AMD APP SDK, please modify "builddef.txt" file by specifying appropriate paths before building
 
 2) run "main.py" (choose graphics options; when loaded, press [Enter] to start/stop simulation, use mouse/[+]/[-] to change point of view, [Esc] to quit)
 
