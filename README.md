@@ -12,6 +12,8 @@ Requirements
 - python-ogre (download OGRE, OIS and "plugins" and place them into the root directory:
 https://www.dropbox.com/sh/4i852xb5w9i2dtr/AACE6H5EkiKNDD0jkYht77UGa (for Windows))
 
+Note: gcc bitness and python bitness must be the same (in case of MinGW -- x32)
+
 How to run
 --------------
 1) execute "make" once from command line in order to comile C source files (to create "host.dll" library used from python script and "test" executable)
@@ -50,7 +52,7 @@ Tasks
 --------------
 - download and successfully run (don't forget to meet requirements)
 - write your own kernel which utilizes local memory (try to improve kernel execution time as much as you can)
-- write your own fast, clear and simple visualization code (OGRE is an overkill for this purpose, I'd recommend using OpenGL-OpenCL interoperability through shared context and VBO); note that this is a heavy task though
+- write your own fast, clear and simple visualization code (OGRE is an overkill for this purpose, I'd recommend using OpenGL-OpenCL interoperability through shared context and VBO); note that this is a heavy task though; you may use, for example, particles simulation code from CUDA OpenCL examples
 - create some user interface (UI), for example with QT (PyQT or whatever)
 - experiment with particles interactions; any ideas and improvements concerning algorithm/model are welcome; maybe try to implement "solid spheres" collisions
 - play/modify/improve/do whatever you'd like, make some cool things
